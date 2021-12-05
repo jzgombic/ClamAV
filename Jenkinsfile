@@ -6,3 +6,5 @@ pipeline {
         bat 'sudo ansible-playbook ClamAV.yaml'
       }
     }
+  }
+}
