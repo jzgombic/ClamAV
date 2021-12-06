@@ -12,5 +12,10 @@ pipeline {
         sh("python3 -m pip install --user ansible")
       }
     }
+    stage('Deploy ClamAV') {
+      steps {
+        sh("ansible-playbook ClamAV.yaml")
+      }
+    }
   }
 }
