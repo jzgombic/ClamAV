@@ -14,7 +14,7 @@ pipeline {
     }
     stage('Deploy ClamAV') {
       steps {
-        sh("ansible-playbook ClamAV.yaml -i hosts")
+        sh("ansible -m ping hosts")
       }
     }
   }
