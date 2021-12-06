@@ -3,14 +3,3 @@
 
   roles:
     - clamav
-
-  tasks:
-
-  - name: Install ClamAV basics
-    yum: name=clamav state=latest
-
-  - name: Install ClamAV scanner
-    yum: name=clamav-scanner state=latest
-
-  - name: Install ClamAV updater
-    yum: name=clamav-update state=latest
