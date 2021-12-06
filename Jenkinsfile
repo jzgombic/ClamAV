@@ -15,7 +15,7 @@ pipeline {
     }
     stage('Deply ClamAV') {
       steps {
-        sh("ansible-playbook ClamAV.yaml")
+        sh("ansible-playbook Docker.yaml")
       }
     }
   }
