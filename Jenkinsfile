@@ -14,7 +14,7 @@ pipeline {
     }
     stage('Deploy ClamAV') {
       steps {
-        sh("ansible-playbook ClamAV.yaml")
+        sh("ansible-galaxy install -vvv -r provision/requirements.yml -p provision/roles/"")
       }
     }
   }
