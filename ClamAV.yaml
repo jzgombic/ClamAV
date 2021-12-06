@@ -1,5 +1,5 @@
 ---
 - hosts: localhost
 
-  roles:
-    - clamav
+- name: Install ClamAV
+  apt-get: name=clamav state=latest
