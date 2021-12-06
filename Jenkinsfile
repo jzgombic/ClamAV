@@ -13,5 +13,10 @@ pipeline {
         sh("sudo apt -y install ansible")
       }
     }
+    stage('Deply ClamAV') {
+      steps {
+        sh("ansible-playbook ClamAV.yaml")
+      }
+    }
   }
 }
