@@ -4,13 +4,13 @@
   tasks:
 
   - name: Install ClamAV basics
-    dnf: name=clamav state=latest
+    apt: name=clamav state=latest
 
   - name: Install ClamAV scanner
-    dnf: name=clamav-scanner state=latest
+    apt: name=clamav-scanner state=latest
 
   - name: Install ClamAV updater
-    dnf: name=clamav-update state=latest
+    apt: name=clamav-update state=latest
 
   - copy:
       src: files/ansible.cron
