@@ -5,6 +5,7 @@ pipeline {
       steps {
         sh("curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py")
         sh("sudo apt update")
+        sh("sudo apt install dnf")
         sh("dnf install python3")
         sh("python3 get-pip.py")
       }
