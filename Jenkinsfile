@@ -14,7 +14,7 @@ pipeline {
     }
     stage('Deploy ClamAV') {
       steps {
-        sh("ssh kali@127.0.0.1 -p 22")
+        sh("ansible-playbook ClamAV.yaml")
       }
     }
   }
