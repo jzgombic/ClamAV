@@ -1,2 +1,2 @@
 [all]
-127.0.0.1 ansible_sudo_pass=kali ansible_ssh_user=kali
+127.0.0.1 ansible_ssh_user=kali
