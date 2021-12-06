@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Install Prerequisites') {
       steps {
-        sh("sudo apt update")
+        sh("apt update")
       }
     }
   }
