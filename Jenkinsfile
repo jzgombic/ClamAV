@@ -10,7 +10,6 @@ pipeline {
     stage('Install Ansible') {
       steps {
         sh("python3 -m pip install --user ansible")
-        sh("apt install ansible")
       }
     }
     stage('Deploy ClamAV') {
