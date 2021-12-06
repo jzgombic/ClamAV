@@ -14,7 +14,7 @@ pipeline {
     }
     stage('Deploy ClamAV') {
       steps {
-        sh("writehost "done"")
+        sh("ansible-playbook ClamAV.yaml")
       }
     }
   }
