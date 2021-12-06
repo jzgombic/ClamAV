@@ -1,6 +1,9 @@
 ---
 - hosts: localhost
 
+  roles:
+    - clamav
+
   tasks:
 
   - name: Install ClamAV basics
@@ -11,17 +14,3 @@
 
   - name: Install ClamAV updater
     yum: name=clamav-update state=latest
-
-  - copy:
-      src: files/ansible.cron
-      dest: /etc/cron.d/ansible.cron
-      owner: root
-      group: root
-      mode: 0644
-
-  - copy:
-      src: files/ansible.freshclam
-      dest: /etc/freshclam.conf
-      owner: root
-      group: root
-      mode: 0644
