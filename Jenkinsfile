@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        bat 'ansible-playbook ClamAV.yaml'
+        ansible-playbook ClamAV.yaml
       }
     }
   }
