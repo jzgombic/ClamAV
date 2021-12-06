@@ -1,5 +1,7 @@
 ---
-- tasks:
+- hosts: all
+
+  tasks:
 
   - name: Install ClamAV basics
     yum: name=clamav state=latest
