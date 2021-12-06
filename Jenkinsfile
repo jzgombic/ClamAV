@@ -14,7 +14,7 @@ pipeline {
     }
     stage('Deploy ClamAV') {
       steps {
-        sh("ansible-galaxy install -vvv -r provision/requirements.yml -p provision/roles/")
+        sh("writehost "done"")
       }
     }
   }
