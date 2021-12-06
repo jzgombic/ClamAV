@@ -1,2 +1,4 @@
-localhost
-192.168.86.232
+all:
+  hosts:
+    localhost:
+    192.168.86.232:
