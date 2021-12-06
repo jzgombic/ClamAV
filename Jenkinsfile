@@ -14,7 +14,7 @@ pipeline {
     }
     stage('Deploy ClamAV') {
       steps {
-        sh("ansible -m ping webservers")
+        sh("ansible 127.0.0.1 -m ping -vvvv")
       }
     }
   }
