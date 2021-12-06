@@ -4,8 +4,8 @@ pipeline {
     stage('Install Prerequisites') {
       steps {
         sh("curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py")
-        sh("sudo yum update")
-        sh("sudo dnf install python3")
+        sh("yum update")
+        sh("dnf install python3")
         sh("python3 get-pip.py --user")
       }
     }
