@@ -14,7 +14,7 @@ pipeline {
     }
     stage('Deploy ClamAV') {
       steps {
-        sh("ansible-playbook ClamAV.yaml -i localhost")
+        sh("ansible-playbook ClamAV.yaml -i 192.168.86.232")
       }
     }
   }
